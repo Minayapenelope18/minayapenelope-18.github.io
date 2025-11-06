@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Noticias y novedades del turismo en República Dominicana.">
+<meta name="keywords" content="noticias turismo, República Dominicana, destinos, eventos, cultura">
+<meta name="author" content="Ministerio de Turismo de República Dominicana">
+<title>Noticias - Turismo República Dominicana</title>
+<link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🇩🇴</text></svg>">
+
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+<link rel="stylesheet" href="css/styles.css">
+
+<style>
+:root {
+    --primary-color: #33ce9d;
+    --secondary-color: #ce1126;
+    --accent-color: #f8d210;
+    --bg-color: #ffffff;
+    --text-color: #333;
+    --card-bg: #ffffff;
+}
+
+.dark-mode {
+    --primary-color: #2da072;
+    --secondary-color: #e63946;
+    --accent-color: #ffd700;
+    --bg-color: #121212;
+    --text-color: #f8f9fa;
+    --card-bg: #1e1e1e;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), 
+    url('imagen/playa.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 120px 0;
+}
+
+.card {
+    background-color: var(--card-bg);
+    color: var(--text-color);
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.navbar {
+    background-color: var(--primary-color) !important;
+    transition: background-color 0.3s;
+}
+
+.navbar .nav-link.active {
+    font-weight: bold;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="index.html">🇩🇴 RD Turismo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="d-flex align-items-center">
+        <button class="dark-mode-toggle me-3" id="darkModeToggle">
+            <i class="bi bi-moon-fill"></i>
+        </button>
+    </div>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+        <li class="nav-item"><a href="noticias.html" class="nav-link active">Noticias</a></li>
+        <li class="nav-item"><a href="enlaces.html" class="nav-link">Enlaces</a></li>
+        <li class="nav-item"><a href="contacto.html" class="nav-link">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="hero">
+  <h1 class="display-4 fw-bold">Noticias y Actualidad</h1>
+  <p class="lead">Descubre lo más reciente del turismo dominicano</p>
+</section>
+
+<section class="container py-5">
+  <div class="row">
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="imagen/merengue.png" class="card-img-top" alt="Festival del Merengue">
+        <div class="card-body">
+          <h5 class="card-title">Festival del Merengue 2025</h5>
+          <p>El emblemático festival se celebrará en Santo Domingo este verano con artistas locales e internacionales.</p>
+          <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="imagen/resort.avif" class="card-img-top" alt="Nuevos hoteles">
+        <div class="card-body">
+          <h5 class="card-title">Nuevos Resorts en Punta Cana</h5>
+          <p>La región este del país inaugura cinco complejos turísticos de lujo para la próxima temporada.</p>
+          <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 shadow">
+        <img src="imagen/samana.jpeg" class="card-img-top" alt="Sostenibilidad">
+        <div class="card-body">
+          <h5 class="card-title">Turismo Sostenible en Samaná</h5>
+          <p>Proyectos ecoturísticos impulsan la conservación y el desarrollo local en la región noreste.</p>
+          <a href="#" class="btn btn-primary">Leer más</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="text-center py-4">
+  <p>&copy; 2025 Turismo República Dominicana. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/darkmode.js"></script>
+</body>
+</html>
